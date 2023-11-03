@@ -10,7 +10,7 @@ kv_namespaces = [
 bucket = "./website"
 
 [build]
-command = "wasm-pack build --release -t nodejs && wsl ./helper/morph-wasm-pack-output.sh" # required
+command = "wasm-pack build --release -t nodejs && sh ./helper/morph-wasm-pack-output.sh" # required
 
 [env.production]
 name = "crafthead"
